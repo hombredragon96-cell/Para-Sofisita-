@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Para Sofisita 💛🌻</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background: url('bosque.jpg') no-repeat center center/cover;
+      font-family: "Segoe UI", sans-serif;
+      overflow: hidden;
+    }
+
+    .girasoles {
+      width: 250px;
+      animation: brillar 2s infinite alternate;
+    }
+
+    @keyframes brillar {
+      from { filter: drop-shadow(0 0 5px #ffdf00); }
+      to { filter: drop-shadow(0 0 20px #ffd700) drop-shadow(0 0 40px orange); }
+    }
+
+    .mensaje {
+      margin-top: 20px;
+      font-size: 28px;
+      color: #ffe;
+      text-align: center;
+      max-width: 90%;
+      animation: aparecer 3s ease-in-out;
+      text-shadow: 2px 2px 8px black, 0 0 15px #ffdf00;
+    }
+
+    @keyframes aparecer {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <img class="girasoles" src="girasoles.jpg" alt="Ramo de girasoles">
+  <div class="mensaje">Te quiero mucho, Sofisita, eres la chica más linda del mundo 💕</div>
+</body>
+</html>
